@@ -1,10 +1,6 @@
-# cd ../liquibase-secure-5.2.1-decoratesql
-# source ~/.bash_profile
-# lbpath
-# cd -
 
 liquibase decorateSql \
-    --sqlFile=sql/raw/example1.sql \    # does this support folder? What about a list of folders?
+    --sqlFile=sql/raw/example1.sql \  
     --changelogFile=sql/decorated/example1.mssql.sql \
     --dbType=mssql \
     --executor=sqlcmd \
