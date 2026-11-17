@@ -1,0 +1,18 @@
+# decorate-sql
+liquibase decorate-sql \
+    --sql-file=sql/raw/example1.sql \
+    --changelog-file=sql/decorated/example1.mssql.sql \
+    --dbType=mssql \
+    --executor=sqlcmd \
+    --author=amalik \
+    --overwriteOutputFile=true
+
+
+# decorate-sql folder of SQL scripts
+liquibase decorate-sql \
+    --sql-folder=sql/raw
+    --changelog-file=sql/decorated.xml \
+    --dbType=mssql \
+    --executor=sqlcmd \
+    --author=amalik \
+    --overwriteOutputFile=true
